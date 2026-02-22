@@ -12,19 +12,6 @@ export const Home = () => {
 
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.container}>
-          <h2 className={styles.logo}>Diego Ponce</h2>
-          <nav className={styles.nav}>
-            <a className={styles.navLink} href="#about" rel="noopener noreferrer">About</a>
-            <a className={styles.navLink} href="#skills" rel="noopener noreferrer">Skills</a>
-            <a className={styles.navLink} href="#projects" rel="noopener noreferrer">Projects</a>
-            <a className={styles.navLink} href="#contact" rel="noopener noreferrer">Contact</a>
-            <a className={styles.resumeBtn} href="#resume" rel="noopener noreferrer">Download Resume</a>
-          </nav>
-        </div>
-      </header>
-
       <main>
         <section className={styles.hero}>
           <div className={styles.container}>
@@ -112,18 +99,7 @@ export const Home = () => {
             <p>Phone: +1 (236) 989-4994</p>
           </div>
         </section>
-
-        <footer className={styles.footer}>
-          <div className={styles.container}>
-            <p>&copy; 2024 Diego Ponce. All rights reserved.</p>
-            <div className={styles.footerLinks}>
-              <a className={styles.footerLink} href="https://www.linkedin.com/in/diego-ponce-9b1b4a1b2/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a className={styles.footerLink} href="https://github.com/diego-ponce" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-        </footer>
       </main>
     </>
-
   )
 }

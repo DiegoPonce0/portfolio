@@ -1,11 +1,16 @@
 import { Home } from '../pages/Home.tsx';
-
+import { Header } from '../components/Header.tsx';
+import { Footer } from '../components/Footer.tsx';
 
 function App() {
 
   
   return (
-    <Home />
+    <>
+      <Header />
+        <Home />
+      <Footer />
+    </>
   )
 }
 
