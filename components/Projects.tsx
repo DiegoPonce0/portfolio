@@ -1,7 +1,7 @@
 import type { ProjectsProps } from '../types/projects';
 import styles from './Projects.module.css';
 
-export function Projects({ img, title, description, technology, result, link}: ProjectsProps) {
+export function Projects({ img, title, description, technology, result, link }: ProjectsProps) {
     return (
         <article className={styles.projectCard}>
             <img src={img} alt={title} className={styles.projectImage} />

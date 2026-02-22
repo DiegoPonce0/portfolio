@@ -1,10 +1,10 @@
 /* Skills.module.css */
 
 .skillsGroup {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.55);
-  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.03);
   padding: 24px 18px;
   margin-bottom: 0;
   display: flex;
@@ -15,7 +15,7 @@
 
 .skillsGroup:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(2,6,23,0.65);
+  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.65);
 }
 
 .skillsTitle {
@@ -30,6 +30,19 @@
   font-size: 0.98rem;
   margin-bottom: 0;
   line-height: 1.5;
+}
+
+.skillsCard {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  flex: 1;
 }
 
 /* Responsive */

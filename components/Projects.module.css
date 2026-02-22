@@ -1,11 +1,11 @@
 /* Projects.module.css */
 
 .projectCard {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.55);
-  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.03);
   transition: transform 180ms ease, box-shadow 180ms ease;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
 
 .projectCard:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(2,6,23,0.65);
+  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.65);
 }
 
 .projectImage {
@@ -75,7 +75,7 @@
 }
 
 .projectLink:focus {
-  outline: 3px solid rgba(59,130,246,0.18);
+  outline: 3px solid rgba(59, 130, 246, 0.18);
   outline-offset: 2px;
 }
 

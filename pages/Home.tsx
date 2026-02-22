@@ -1,4 +1,6 @@
-
+import { experiences } from '../src/data/expirences.ts';
+import { projects } from '../src/data/projects.ts';
+import { skills } from '../src/data/skills.ts';
 
 import { Experience } from '../components/Experience.tsx'
 import { Projects } from '../components/Projects.tsx';
@@ -7,146 +9,8 @@ import { Skills } from '../components/Skills.tsx';
 import styles from './Home.module.css';
 
 export const Home = () => {
-  const experiences = [
-        {
-          title: 'Web Developer',
-          company: 'Bind Marketing',
-          date: 'September 2024 to November 2025',
-          description: 'Developed and optimized WordPress pages, implementing technical SEO best practices, Core Web Vitals improvements, and performance enhancements. Collaborated with design and engineering teams to launch high-converting landing pages. increasing conversions by 15% and organic traffic by 25%, while integrating analytics and tracking systems for data-driven optimization.',
-        },
-        {
-          title: 'Web Developer',
-          company: 'Dumroom Media',
-          date: 'September 2024 to November 2025',
-          description: 'Developed and optimized websites using HTML5, CSS3, JavaScript, PHP, and WordPress/WooCommerce, improving site speed by 30% through performance optimization. Built custom features with React and Node.js, modernized deployment workflows via cloud hosting and Git (reducing downtime by 90%), and implemented SEO-driven landing strategies that increased CTR by 22%.',
-        },
-        {
-          title: 'Web Developer',
-          company: 'Dificonsa',
-          date: 'September 2024 to November 2025',
-          description: 'Designed and maintained corporate web applications using React, Bootstrap, and PHP, delivering fully responsive user experiences. Implemented CI/CD pipelines with GitHub Actions and Docker to streamline deployments and reduce errors. Executed technical SEO strategies achieving top 3 Google rankings for 12+ industry keywords (+50% organic traffic), while resolving WordPress/WooCommerce performance issues to improve load times and site reliability. Collaborated with marketing teams to align development efforts with lead generation goals.',
-        }
-      ];
 
-    const projects = [
-        {
-          img: './dashboard.webp',
-          title: 'Marketing Dashboard',
-          description: 'React dashboard with authentication powered by Supabase (PostgreSQL backend), deployed on Vercel.',
-          technology: 'React, Node.js, Express, PostgreSQL',
-          result: 'Results: TODO',
-          link: '#'
-        },
-        {
-            img: './job-board.webp',
-            title: 'Developer Job Board Platform',
-            description: 'Full-stack job marketplace with custom API, authentication, and advanced filtering.',
-            technology: 'React, Node.js, Express, PostgreSQL',
-            result: 'Results: TODO',
-            link: '#'
-        },
-        {
-          img: './dental.webp',
-          title: 'Dental Clinic Website',
-          description: 'Custom WordPress site built with Avada and ACF for a modern dental practice.',
-          technology: 'Wordpress, Avada Theme, ACF, CPTs',
-          result: 'Results: TODO',
-          link: '#'
-        },
-        {
-            img: './tarot.webp',
-            title: 'Booking & Payment System for Tarot Services',
-            description: 'WordPress-based platform for online session scheduling and secure payments.',
-            technology: 'Wordpress, Custom Plugin Development',
-            result: 'Results: TODO',
-            link: '#'
-        },
-        {
-            img: './snack.webp',
-            title: 'Healthy Snack E-commerce Website',
-            description: 'Custom WordPress store with WooCommerce integration, featuring product catalog, cart, and secure checkout.',
-            technology: 'Wordpress, Woocommerce',
-            result: 'Results: TODO',
-            link: '#'
-        },
-        {
-            img: './steelwise.webp',
-            title: 'WordPress Development & Technical SEO',
-            description: 'WordPress development and technical SEO improvements to enhance performance, visibility, and search rankings.',
-            technology: 'Wordpress, Elementor, Technical SEO',
-            result: 'Results: TODO',
-            link: '#'
-        },
-        {
-            img: './bocatomates.webp',
-            title: 'Real Estate Development Landing Page',
-            description: '//TODO',
-            technology: 'Wordpress, Gutenberg',
-            result: 'TODO',
-            link: '#'
-        },
-        {
-            img: './printing.webp',
-            title: 'Printing Company Website',
-            description: 'Custom WordPress site built with Gutenberg and ACF for a modern printing company.',
-          technology: 'Wordpress, Gutenberg, ACF, CPTs',
-          result: 'Results: TODO',
-          link: '#'
-        },
-        {
-            img: './dificonsa.webp',
-            title: 'Construction Company Website',
-            description: '//TODO',
-            technology: 'Wordpress, Custom Theme Development',
-            result: 'TODO',
-            link: '#'
-        },
-        {
-            img: './cacao.webp',
-            title: 'Chocolate E-commerce Website',
-            description: '//TODO',
-            technology: 'Shopify',
-            result: 'TODO',
-            link: '#'
-        },
-        {
-            img: './video-agency.webp',
-            title: 'Video Agency Website',
-            description: '//TODO',
-            technology: 'Wordpress, Elementor, ACF, CPTs',
-            result: 'TODO',
-            link: '#'
-        },
-        {
-            img: './comingsoon.webp',
-            title: 'Coming Soon',
-            description: '//TODO',
-            technology: 'TODO',
-            result: 'TODO',
-            link: '#'
-        }
-      ];
-
-      const skills = [
-        {
-          title: 'Frontend',
-          description: 'React, Astro, Tailwind, HTML, CSS, JavaScript, Figma'
-        },
-        {
-            title: 'Backend',
-          description: 'Node.js, Express, PostgreSQL, GraphQl, REST API'
-        },
-        {
-          title: 'CMS',
-          description: 'Headless WordPress ACF CPTs, Shopify, Woocommerce'
-        },
-        {
-          title: 'Tools',
-          description: 'Git, Docker, VS Code, AWS, CI/CD'
-        }
-      ];
-
-    return (
+  return (
     <>
       <header className={styles.header}>
         <div className={styles.container}>
@@ -183,13 +47,13 @@ export const Home = () => {
           <div className={styles.container}>
             <h2>Work Experience</h2>
             <div className={styles.experienceList}>
-              {experiences.map((exp, index) => (
+              {experiences.map((experience, index) => (
                 <Experience
                   key={index}
-                  title={exp.title}
-                  company={exp.company}
-                  date={exp.date}
-                  description={exp.description}
+                  title={experience.title}
+                  company={experience.company}
+                  date={experience.date}
+                  description={experience.description}
                 />
               ))}
             </div>
@@ -201,7 +65,7 @@ export const Home = () => {
             <h2>Projects</h2>
             <div className={styles.projectsList}>
               {projects.map((project, index) => (
-                <Projects 
+                <Projects
                   key={index}
                   img={project.img}
                   title={project.title}
@@ -209,7 +73,7 @@ export const Home = () => {
                   technology={project.technology}
                   result={project.result}
                   link={project.link}
-                />  
+                />
               ))}
             </div>
           </div>
@@ -218,22 +82,25 @@ export const Home = () => {
         <section className={styles.aboutMe}>
           <div className={styles.container}>
             <h2>About Me</h2>
-            <p>//TODO</p>
+            <p>I’m a Full-Stack Web Developer focused on building high-performance, scalable web applications. I work across modern JavaScript stacks (React, Node.js) and WordPress ecosystems, combining clean architecture with SEO and performance optimization.
+
+              I’ve developed e-commerce platforms, job marketplaces, and custom dashboards, consistently improving load times, search visibility, and conversion rates. I’m passionate about creating solutions that are both technically solid and business-driven.</p>
+            <img src="./profile.webp" alt="Diego Ponce" className={styles.profileImage} />
           </div>
         </section>
 
         <section className={styles.skills}>
           <div className={styles.container}>
             <h2>Skills</h2>
-            <div className={styles.projectsList}>
-            {skills.map((skill, index) => (
-              <div className={styles.skillsGroup} >
-                <Skills
-                  key={index} 
-                  title={skill.title} 
-                  description={skill.description} />
-              </div>
-            ))}
+            <div className={styles.skillsList}>
+              {skills.map((skill, index) => (
+                <div className={styles.skillsGroup} >
+                  <Skills
+                    key={index}
+                    title={skill.title}
+                    description={skill.description} />
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -258,5 +125,5 @@ export const Home = () => {
       </main>
     </>
 
-    )
+  )
 }
