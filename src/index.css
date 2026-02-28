@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* ======================
+     🎨 BRAND COLORS
+  ====================== */
+
+  --color-primary: #2b6cee;
+  --color-primary-dark: #1a4fb5;
+  --color-primary-light: #6092f3;
+
+  /* ======================
+     🌞 LIGHT MODE
+  ====================== */
+
+  --color-background: #f6f6f8;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+
+  /* ======================
+     🌙 DARK MODE
+  ====================== */
+
+  --color-background-dark: #111722;
+  --color-surface-dark: #192233;
+  --color-border-dark: #232f48;
+
+  /* ======================
+     🔲 RADIUS
+  ====================== */
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Global */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
