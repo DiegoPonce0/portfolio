@@ -31,8 +31,8 @@ export const Home = () => {
 
         <section className="workExperience">
           <div className="container">
-            <h2>Work Experience</h2>
-            <div className="experienceList">
+            <h2 className='text-2xl font-bold py-2 px-2'>Work Experience</h2>
+            <div className="p-8">
               {experiences.map((experience, index) => (
                 <Experience
                   key={index}
@@ -92,10 +92,10 @@ export const Home = () => {
         </section>
 
         <section className="px-4 py-8 bg-background-light dark:bg-background-dark">
-          <h2 className='text-2xl font-bold py-2 text-center'>Contact Me</h2>
+          <h2 className='text-2xl font-bold py-4 text-center'>Contact Me</h2>
           <div className="flex gap-4 justify-center">
-            <p className='border border-green-50 p-2 rounded-full'>Email: diego_lpz29@hotmail.com</p>
-            <p className='border border-green-50 p-2 rounded-full'>Phone: +1 (236) 989-4994</p>
+            <p className='bg-blue-600 border border-green-50 p-2 rounded-full'>Email: diego_lpz29@hotmail.com</p>
+            <p className='bg-emerald-600 border border-green-50 p-2 rounded-full'>Phone: +1 (236) 989-4994</p>
           </div>
         </section>
       </main>
