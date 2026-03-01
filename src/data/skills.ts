@@ -3,18 +3,18 @@ import type { SkillsProps } from '../../types/skills';
 export const skills: SkillsProps[] = [
         {
           title: 'Frontend',
-          description: 'React, Astro, Tailwind, HTML, CSS, JavaScript, Figma'
+          icons: ['React', 'Astro', 'Tailwind', 'HTML', 'CSS', 'JavaScript', 'TypeScript']
         },
         {
             title: 'Backend',
-          description: 'Node.js, Express, PostgreSQL, GraphQl, REST API'
+          icons: ['Nodejs', 'Express', 'PostgreSQL', 'GraphQl', 'REST API']
         },
         {
-          title: 'CMS',
-          description: 'Headless WordPress ACF CPTs, Shopify, Woocommerce'
+          title: 'CMS & E-commerce',
+          icons: ['WordPress', 'Shopify', 'Woocommerce']
         },
         {
           title: 'Tools',
-          description: 'Git, Docker, VS Code, AWS, CI/CD'
+          icons: ['Git', 'GitHub', 'Docker', 'VS Code', 'AWS', 'CI/CD']
         }
       ];

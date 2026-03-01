@@ -2,13 +2,18 @@ import type { ExperienceProps } from '../types/experience';
 
 export function Experience({ title, company, date, description }: ExperienceProps) {
     return (
-        <article className="grid grid-cols-2 gap-1 p-4 border rounded-md bg-white dark:bg-gray-800 justify-between">
-            <div>
-              <h3 className="font-bold">{title}</h3>
-              <p className="font-semibold">{company}</p>
-              <p className="text-gray-500 dark:text-gray-400 ">{date}</p>
+        <article className="relative grid grid-cols-[40px_1fr] md:grid-cols-[40px_300px_1fr] p-4 bg-white dark:bg-background-dark justify-between">
+            
+            <div className="relative flex justify-center">
+              <div className="h-4 w-4 rounded-full bg-yellow-400 z-20" />
             </div>
+            
             <div>
+              <h3 className="text-yellow-400 font-semibold text-lg">{title}</h3>
+              <p className="font-semibold">{company}</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 ">{date}</p>
+            </div>
+            <div className="md:col-start-3">
               <p>{description}</p>
             </div>
         </article>

@@ -30,18 +30,24 @@ export const Home = () => {
         </section>
 
         <section className="workExperience">
-          <div className="container">
-            <h2 className='text-2xl font-bold py-2 px-2'>Work Experience</h2>
-            <div className="p-8">
-              {experiences.map((experience, index) => (
-                <Experience
-                  key={index}
-                  title={experience.title}
-                  company={experience.company}
-                  date={experience.date}
-                  description={experience.description}
-                />
-              ))}
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className='text-3xl font-bold py-2 px-2 mb-10'>Work Experience</h2>
+            
+            <div className="relative">
+              {/* Línea vertical */}
+              <div className="absolute left-[68px] top-0 h-full w-px -translate-x-1/2 bg-slate-700 z-10" />
+              
+              <div className="p-8">
+                {experiences.map((experience, index) => (
+                  <Experience
+                    key={index}
+                    title={experience.title}
+                    company={experience.company}
+                    date={experience.date}
+                    description={experience.description}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -85,11 +91,12 @@ export const Home = () => {
                   <Skills
                     key={index}
                     title={skill.title}
-                    description={skill.description} />
+                    icons={skill.icons} />
               ))}
             </div>
           </div>
         </section>
+
 
         <section className="px-4 py-8 bg-background-light dark:bg-background-dark">
           <h2 className='text-2xl font-bold py-4 text-center'>Contact Me</h2>
