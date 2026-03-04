@@ -33,14 +33,14 @@ export const projects: ProjectsProps[] = [
             result: 'Results: TODO',
             link: '#'
         },
-        {
-            img: './snack.webp',
-            title: 'Healthy Snack E-commerce Website',
-            description: 'Custom WordPress store with WooCommerce integration, featuring product catalog, cart, and secure checkout.',
-            technology: ['Wordpress', 'Woocommerce'],
-            result: 'Results: TODO',
-            link: '#'
-        },
+        // {
+        //     img: './snack.webp',
+        //     title: 'Healthy Snack E-commerce Website',
+        //     description: 'Custom WordPress store with WooCommerce integration, featuring product catalog, cart, and secure checkout.',
+        //     technology: ['Wordpress', 'Woocommerce'],
+        //     result: 'Results: TODO',
+        //     link: '#'
+        // },
         {
             img: './steelwise.webp',
             title: 'WordPress Development & Technical SEO',

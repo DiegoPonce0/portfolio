@@ -9,14 +9,26 @@ import { Skills } from '../components/Skills.tsx';
 
 export const Home = () => {
 
+  const locationIcon = (
+    <svg
+      viewBox="0 0 24 24"
+      className="w-5 h-5 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200"
+      >
+      <use href={`/sprite.svg#location`} />
+    </svg>
+  );
+
   return (
     <>
       <main className='bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display overflow-x-hidden antialiased'>
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-white dark:bg-gray-900 min-h-[70dvh] flex items-center">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
-            <div className="py-2">
+            <div className="py-2 flex items-center gap-3 flex-wrap">
               <span className="bg-background-dark border-2 border-blue-400 rounded-full px-2 py-1 text-blue-400">Open to work</span>
-              <span className="px-4">Vancouver, BC</span>
+              <div className="flex items-center gap-1 text-gray-700 dark:text-gray-300">
+                {locationIcon}
+                <span>Vancouver, BC</span>
+              </div>
             </div>
             <h1 className="py-4 text-4xl">Hey, I'm Diego Ponce</h1>
             <h2 className="text-2xl mb-6">
@@ -29,13 +41,13 @@ export const Home = () => {
           </div>
         </section>
 
-        <section className="workExperience">
+        <section className="py-8">
           <div className="max-w-5xl mx-auto px-6">
             <h2 className='text-3xl font-bold py-2 px-2 mb-10'>Work Experience</h2>
             
             <div className="relative">
-              {/* Línea vertical */}
-              <div className="absolute left-[68px] top-0 h-full w-px -translate-x-1/2 bg-slate-700 z-10" />
+              
+              <div className="absolute left-[68px] top-6 h-full w-px -translate-x-1/2 bg-slate-700 z-10" />
               
               <div className="p-8">
                 {experiences.map((experience, index) => (
@@ -52,9 +64,9 @@ export const Home = () => {
           </div>
         </section>
 
-        <section className="projects">
-          <div className="container">
-            <h2 className='text-4xl pl-2'>Projects</h2>
+        <section className="py-8">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className='text-3xl font-bold py-2 px-2 mb-10'>Projects</h2>
             <div className="flex flex-col gap-6 p-6 justify-center">
               {projects.map((project, index) => (
                 <Projects
@@ -71,10 +83,10 @@ export const Home = () => {
           </div>
         </section>
 
-        <section className="px-4 py-8 bg-white dark:bg-background-dark">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="flex flex-col">
-              <h2 className='text-2xl font-bold pb-2'>About Me</h2>
+        <section className="px-4 py-12 bg-white dark:bg-background-dark">
+          <div className="flex flex-col md:flex-row items-center gap-6 p-6">
+            <div className="max-w-5xl mx-auto px-6">
+              <h2 className='text-3xl font-bold py-2 px-2 mb-10'>About Me</h2>
               <p>I’m a Full-Stack Web Developer focused on building high-performance, scalable web applications. I work across modern JavaScript stacks (React, Node.js) and WordPress ecosystems, combining clean architecture with SEO and performance optimization.
 
                 I’ve developed e-commerce platforms, job marketplaces, and custom dashboards, consistently improving load times, search visibility, and conversion rates. I’m passionate about creating solutions that are both technically solid and business-driven.</p>
@@ -83,9 +95,9 @@ export const Home = () => {
           </div>
         </section>
 
-        <section className="bg-white dark:bg-gray-900">
-          <div className="container">
-            <h2 className='text-2xl font-bold px-2 py-2'>Skills</h2>
+        <section className="bg-white dark:bg-background-dark py-8">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className='text-3xl font-bold pt-10 px-2 mb-10 text-center md:text-left'>Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6">
               {skills.map((skill, index) => (
                   <Skills
@@ -98,11 +110,13 @@ export const Home = () => {
         </section>
 
 
-        <section className="px-4 py-8 bg-background-light dark:bg-background-dark">
-          <h2 className='text-2xl font-bold py-4 text-center'>Contact Me</h2>
-          <div className="flex gap-4 justify-center">
-            <p className='bg-blue-600 border border-green-50 p-2 rounded-full'>Email: diego_lpz29@hotmail.com</p>
-            <p className='bg-emerald-600 border border-green-50 p-2 rounded-full'>Phone: +1 (236) 989-4994</p>
+        <section className="bg-background-light dark:bg-background-dark py-32">
+          <div className="max-w-5xl mx-auto px-6">
+            <h2 className='text-2xl font-bold py-8 text-center'>Contact Me</h2>
+            <div className="flex gap-4 justify-center">
+              <p className='bg-blue-600 px-4 rounded-full place-content-center'>diego_lpz29@hotmail.com</p>
+              <p className='bg-emerald-600 px-4 py-2 rounded-full'>+1 (236) 989-4994</p>
+            </div>
           </div>
         </section>
       </main>

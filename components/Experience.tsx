@@ -13,7 +13,7 @@ export function Experience({ title, company, date, description }: ExperienceProp
               <p className="font-semibold">{company}</p>
               <p className="text-sm text-gray-500 dark:text-gray-400 ">{date}</p>
             </div>
-            <div className="md:col-start-3">
+            <div className="pl-10 col-span-2 md:col-start-3 md:col-span-1 mt-4 md:mt-0">
               <p>{description}</p>
             </div>
         </article>
