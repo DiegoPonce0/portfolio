@@ -1,8 +1,10 @@
-import {useDarkMode} from '../hooks/useDarkMode';
+import { useDarkMode } from '../hooks/useDarkMode';
+import { useScroll } from '../hooks/useScroll'
 
 
 export function Header() {
   const {isDark, toggleTheme} = useDarkMode();
+  const scrolled = useScroll(40);
 
   const moonIcon = (
     <svg
@@ -15,7 +17,7 @@ export function Header() {
   const sunIcon = (
     <svg
       viewBox="0 0 24 24"
-      className="w-10 h-10 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200">
+      className="w-6 h-6 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200">
       <use href={`/sprite.svg#sun`} />
     </svg>
   );
@@ -24,36 +26,39 @@ export function Header() {
   return (
     <header className="
     sticky
-    top-0 
-    z-50 
-    flex 
-    flex-wrap
-    items-center 
-    justify-between 
-    border-b 
-    border-solid
-     border-b-border-dark
-     bg-background-dark/95 
-     backdrop-blur-sm
-     px-2 
-     md:px-16  
-     md:py-4">
-      <div className="flex flex-wrap items-center gap-1 md:gap-4 text-white w-full">
-        <div className="text-lg font-bold">
-          <h2 className="logo">Diego Ponce</h2>
-        </div>
-        <div className="flex flex-wrap items-center gap-1 md:gap-4 ml-auto">
-          <nav className="flex flex-wrap items-center gap-3 md:gap-9 text-sm">
-            <a className="hover:text-primary font-medium" href="#about">About</a>
-            <a className="hover:text-primary font-medium" href="#skills">Skills</a>
-            <a className="hover:text-primary font-medium" href="#projects">Projects</a>
-            <a className="hover:text-primary font-medium" href="#contact">Contact</a>
-          </nav>
-          <div className="flex items-center gap-4 overflow-hidden">
-            <button className='hover:text-primary w-10 h-10' 
-            onClick={toggleTheme}>
+    top-6 
+    z-50
+    ">
+      <div className={`max-w-5xl mx-auto px-4 md:px-6 
+        
+        ${
+            scrolled 
+            ? "shadow-sm rounded-full bg-gray-100/80 dark:bg-gray-800/80 backdrop-blur-md" 
+            : "bg-transparent"
+          }
+        `}
+       >
+        
+        <div className="flex items-center justify-between py-3 md:py-4">
+          
+          <h2 className="text-sm md:text-lg font-bold dark:text-white">
+            Diego Ponce
+          </h2>
+        
+          <div className="flex items-center gap-4 md:gap-8">
+
+            <nav className="flex items-center gap-2 md:gap-8 text-sm">
+              <a className="dark:text-white hover:text-primary font-medium" href="#about">About</a>
+              <a className="dark:text-white hover:text-primary font-medium" href="#skills">Skills</a>
+              <a className="dark:text-white hover:text-primary font-medium" href="#projects">Projects</a>
+              <a className="dark:text-white hover:text-primary font-medium" href="#contact">Contact</a>
+            </nav>
+            
+            <button className='w-6 h-6' 
+              onClick={toggleTheme}>
               {isDark ? moonIcon : sunIcon}
             </button>
+          
           </div>
         </div>
       </div>

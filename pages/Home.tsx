@@ -48,8 +48,8 @@ export const Home = () => {
   return (
     <>
       <main className='bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display overflow-x-hidden antialiased'>
-        <section className="bg-white dark:bg-gray-900 min-h-[70dvh] flex items-center">
-          <div className="py-8 px-4 mx-auto max-w-7xl lg:py-16 lg:px-12">
+        <section className="bg-white dark:bg-background-dark min-h-[70dvh] flex items-center">
+          <div className="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-12">
             <div className="py-2 flex items-center gap-3 flex-wrap">
               <span className="inline-flex items-center gap-2 dark:bg-background-dark border-2 border-green-400 rounded-full px-2 py-1 text-gray-700 dark:text-gray-300">
                 
@@ -70,8 +70,8 @@ export const Home = () => {
               Full-stack web developer specializing in React, Astro, Node.js, Open to local, hybrid, and remote roles.
             </h2>
             <div className="space-x-4 font-bold">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">View Projects</button>
-              <button className="bg-background-dark hover:bg-gray-800 text-white px-4 py-2 rounded-md border-2 border-blue-400">Contact Me</button>
+              <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md cursor-pointer">View Projects</button>
+              <button className="bg-white hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-200 dark:text-white dark:hover:text-black px-4 py-2 rounded-md shadow-sm border dark:border-white cursor-pointer">Contact Me</button>
             </div>
           </div>
         </section>
@@ -125,19 +125,6 @@ export const Home = () => {
           </div>
         </section>
 
-        <section className="px-4 py-12 bg-white dark:bg-background-dark">
-          <div className="flex flex-col md:flex-row items-center gap-6 p-6">
-            <div className="max-w-5xl mx-auto px-6">
-              <h2 className='flex items-center gap-2 text-3xl font-bold py-2 px-2 mb-10'>{userIcon} 
-                <span>About Me</span>
-                </h2>
-              <p>I’m a Full-Stack Web Developer focused on building high-performance, scalable web applications. I work across modern JavaScript stacks (React, Node.js) and WordPress ecosystems, combining clean architecture with SEO and performance optimization.
-
-                I’ve developed e-commerce platforms, job marketplaces, and custom dashboards, consistently improving load times, search visibility, and conversion rates. I’m passionate about creating solutions that are both technically solid and business-driven.</p>
-            </div>
-            <img src="./profile.webp" alt="Diego Ponce" className="rounded-full w-48 h-48 object-cover mx-auto" />
-          </div>
-        </section>
 
         <section className="bg-white dark:bg-background-dark py-8">
           <div className="max-w-5xl mx-auto px-6">
@@ -153,14 +140,17 @@ export const Home = () => {
           </div>
         </section>
 
+        <section className="px-4 py-16 bg-white dark:bg-background-dark">
+          <div className="flex flex-col md:flex-row items-center gap-6 p-6 max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto">
+              <h2 className='flex items-center gap-2 text-3xl font-bold py-2 px-2 mb-10'>{userIcon} 
+                <span>About Me</span>
+                </h2>
+              <p>I’m a Full-Stack Web Developer focused on building high-performance, scalable web applications. I work across modern JavaScript stacks (React, Node.js) and WordPress ecosystems, combining clean architecture with SEO and performance optimization.
 
-        <section className="bg-background-light dark:bg-background-dark py-32">
-          <div className="max-w-5xl mx-auto px-6">
-            <h2 className='text-2xl font-bold py-8 text-center'>Contact Me</h2>
-            <div className="flex gap-4 justify-center">
-              <p className='bg-blue-600 px-4 rounded-full place-content-center'>diego_lpz29@hotmail.com</p>
-              <p className='bg-emerald-600 px-4 py-2 rounded-full'>+1 (236) 989-4994</p>
+                I’ve developed e-commerce platforms, job marketplaces, and custom dashboards, consistently improving load times, search visibility, and conversion rates. I’m passionate about creating solutions that are both technically solid and business-driven.</p>
             </div>
+            <img src="./profile.webp" alt="Diego Ponce" className="rounded-full w-48 h-48 object-cover mx-auto" />
           </div>
         </section>
       </main>

@@ -10,7 +10,7 @@ export const projects: ProjectsProps[] = [
           link: '#'
         },
         {
-            img: './job-board.webp',
+            img: './job.webp',
             title: 'Developer Job Board Platform',
             description: 'Full-stack job marketplace with custom API, authentication, and advanced filtering.',
             technology: ['React', 'Node.js', 'Express', 'PostgreSQL'],
@@ -26,8 +26,8 @@ export const projects: ProjectsProps[] = [
           link: '#'
         },
         {
-            img: './tarot.webp',
-            title: 'Booking & Payment System for Tarot Services',
+            img: './booking.webp',
+            title: 'Booking & Payment System for online Services',
             description: 'WordPress-based platform for online session scheduling and secure payments.',
             technology: ['Wordpress', 'Custom Plugin Development'],
             result: 'Results: TODO',

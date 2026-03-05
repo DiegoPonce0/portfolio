@@ -16,8 +16,8 @@ const techColors: Record<string, string> = {
 
 export function Projects({ img, title, description, technology, result, link }: ProjectsProps) {
     return (
-        <article className="flex flex-col md:flex-row items-center gap-6 bg-white dark:bg-gray-900 rounded-lg shadow-md p-6">
-            <img src={img} alt={title} className="h-44 md:h-64 w-auto"/>
+        <article className="flex flex-col md:flex-row items-center gap-6 bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <img src={img} alt={title} className="h-32 md:h-64 w-auto"/>
             <div className="projectContent">
                 <h2 className="text-2xl font-bold pb-2">{title}</h2>
                 <p className="py-2">{description}</p>
