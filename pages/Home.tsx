@@ -18,13 +18,48 @@ export const Home = () => {
     </svg>
   );
 
+  const codeIcon = (
+    <svg
+      viewBox="0 0 24 24"
+      className="w-10 h-10 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200"
+      >
+      <use href={`/sprite.svg#code`} />
+    </svg>
+  );
+
+  const caseIcon = (
+    <svg
+      viewBox="0 0 24 24"
+      className="w-10 h-10 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200"
+      >
+      <use href={`/sprite.svg#case`} />
+    </svg>
+  )
+
+  const userIcon = (
+    <svg
+      viewBox="0 0 24 24"
+      className="w-10 h-10 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200"
+      >
+      <use href={`/sprite.svg#user`} />
+    </svg>
+  )
+
   return (
     <>
       <main className='bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display overflow-x-hidden antialiased'>
         <section className="bg-white dark:bg-gray-900 min-h-[70dvh] flex items-center">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+          <div className="py-8 px-4 mx-auto max-w-7xl lg:py-16 lg:px-12">
             <div className="py-2 flex items-center gap-3 flex-wrap">
-              <span className="bg-background-dark border-2 border-blue-400 rounded-full px-2 py-1 text-blue-400">Open to work</span>
+              <span className="inline-flex items-center gap-2 dark:bg-background-dark border-2 border-green-400 rounded-full px-2 py-1 text-gray-700 dark:text-gray-300">
+                
+                <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                </span>
+                Open to work
+              
+              </span>
               <div className="flex items-center gap-1 text-gray-700 dark:text-gray-300">
                 {locationIcon}
                 <span>Vancouver, BC</span>
@@ -43,11 +78,15 @@ export const Home = () => {
 
         <section className="py-8">
           <div className="max-w-5xl mx-auto px-6">
-            <h2 className='text-3xl font-bold py-2 px-2 mb-10'>Work Experience</h2>
+            
+            <h2 className='flex items-center gap-2 text-3xl font-bold py-2 px-2 mb-10'>
+              {caseIcon} 
+              <span>Work Experience</span>
+              </h2>
             
             <div className="relative">
               
-              <div className="absolute left-[68px] top-6 h-full w-px -translate-x-1/2 bg-slate-700 z-10" />
+              <div className="absolute left-13 md:left-[68px] top-6 h-full w-px -translate-x-1/2 bg-slate-700 z-10" />
               
               <div className="p-8">
                 {experiences.map((experience, index) => (
@@ -66,7 +105,10 @@ export const Home = () => {
 
         <section className="py-8">
           <div className="max-w-5xl mx-auto px-6">
-            <h2 className='text-3xl font-bold py-2 px-2 mb-10'>Projects</h2>
+            <h2 className='flex items-center gap-2 text-3xl font-bold py-2 px-2 mb-10'>
+              {codeIcon}
+              <span>Projects</span>
+            </h2>
             <div className="flex flex-col gap-6 p-6 justify-center">
               {projects.map((project, index) => (
                 <Projects
@@ -86,7 +128,9 @@ export const Home = () => {
         <section className="px-4 py-12 bg-white dark:bg-background-dark">
           <div className="flex flex-col md:flex-row items-center gap-6 p-6">
             <div className="max-w-5xl mx-auto px-6">
-              <h2 className='text-3xl font-bold py-2 px-2 mb-10'>About Me</h2>
+              <h2 className='flex items-center gap-2 text-3xl font-bold py-2 px-2 mb-10'>{userIcon} 
+                <span>About Me</span>
+                </h2>
               <p>I’m a Full-Stack Web Developer focused on building high-performance, scalable web applications. I work across modern JavaScript stacks (React, Node.js) and WordPress ecosystems, combining clean architecture with SEO and performance optimization.
 
                 I’ve developed e-commerce platforms, job marketplaces, and custom dashboards, consistently improving load times, search visibility, and conversion rates. I’m passionate about creating solutions that are both technically solid and business-driven.</p>

@@ -2,7 +2,7 @@ import type { ExperienceProps } from '../types/experience';
 
 export function Experience({ title, company, date, description }: ExperienceProps) {
     return (
-        <article className="relative grid grid-cols-[40px_1fr] md:grid-cols-[40px_300px_1fr] p-4 bg-white dark:bg-background-dark justify-between">
+        <article className="relative grid grid-cols-[40px_1fr] md:grid-cols-[40px_300px_1fr] md:p-4 py-4 bg-white dark:bg-background-dark justify-between">
             
             <div className="relative flex justify-center">
               <div className="h-4 w-4 rounded-full bg-yellow-400 z-20" />
