@@ -7,7 +7,7 @@ export const skills: SkillsProps[] = [
         },
         {
             title: 'Backend',
-          icons: ['Nodejs', 'Express', 'PostgreSQL', 'GraphQl', 'REST API']
+          icons: ['Nodejs', 'Express', 'PostgreSQL', 'GraphQl']
         },
         {
           title: 'CMS & E-commerce',
@@ -15,6 +15,6 @@ export const skills: SkillsProps[] = [
         },
         {
           title: 'Tools',
-          icons: ['Git', 'GitHub', 'Docker', 'VS Code', 'AWS', 'CI/CD']
+          icons: ['Git', 'GitHub', 'Docker', 'VS Code', 'AWS']
         }
       ];
