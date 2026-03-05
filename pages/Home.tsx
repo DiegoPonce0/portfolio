@@ -45,12 +45,25 @@ export const Home = () => {
     </svg>
   )
 
+  const terminalIcon = (
+    <svg
+      viewBox="0 0 24 24"
+      className="w-10 h-10 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200"
+      >
+      <use href={`/sprite.svg#terminal`} />
+    </svg>
+  )
+
+
   return (
     <>
       <main className='bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display overflow-x-hidden antialiased'>
         <section className="bg-white dark:bg-background-dark min-h-[70dvh] flex items-center">
           <div className="py-8 px-4 mx-auto max-w-5xl lg:py-16 lg:px-12">
             <div className="py-2 flex items-center gap-3 flex-wrap">
+              
+              <img src="./profile.webp" alt="Diego Ponce" className="rounded-full w-20 h-20 object-cover" />
+              
               <span className="inline-flex items-center gap-2 dark:bg-background-dark border-2 border-green-400 rounded-full px-2 py-1 text-gray-700 dark:text-gray-300">
                 
                 <span className="relative flex h-3 w-3">
@@ -128,7 +141,7 @@ export const Home = () => {
 
         <section className="bg-white dark:bg-background-dark py-8">
           <div className="max-w-5xl mx-auto px-6">
-            <h2 className='text-3xl font-bold pt-10 px-2 mb-10 text-center md:text-left'>Skills</h2>
+            <h2 className='flex items-center gap-2 text-3xl font-bold py-2 px-2 mb-10'>{terminalIcon}Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6">
               {skills.map((skill, index) => (
                   <Skills

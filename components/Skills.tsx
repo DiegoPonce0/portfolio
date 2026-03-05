@@ -11,13 +11,21 @@ export function Skills({ title, icons }: SkillsProps) {
             
             <div className="flex flex-wrap justify-center gap-6">
                 {icons.map((icon, index) => (
-                <svg
+                 <div
                     key={index}
+                    className="flex flex-col items-center gap-2"
+                 >
+                    <svg
                     viewBox="0 0 24 24"
                     className="w-10 h-10 fill-current text-gray-700 dark:text-gray-300 hover:scale-110 transition-transform duration-200"
-                >
+                    >
                     <use href={`/sprite.svg#${icon.toLowerCase()}`} />
-                </svg>
+                    </svg>
+
+                    <span className="text-sm text-gray-700 dark:text-gray-300">
+                    {icon}
+                    </span>
+                 </div>
                 ))}
             </div>
         
