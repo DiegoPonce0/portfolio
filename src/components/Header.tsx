@@ -1,5 +1,5 @@
-import { useDarkMode } from '../hooks/useDarkMode';
-import { useScroll } from '../hooks/useScroll'
+import { useDarkMode } from "../hooks/useDarkMode";
+import { useScroll } from '../hooks/useScroll';
 
 
 export function Header() {
@@ -48,10 +48,10 @@ export function Header() {
           <div className="flex items-center gap-4 md:gap-8">
 
             <nav className="flex items-center gap-2 md:gap-8 text-sm">
-              <a className="dark:text-white hover:text-primary font-medium" href="#about">About</a>
-              <a className="dark:text-white hover:text-primary font-medium" href="#skills">Skills</a>
               <a className="dark:text-white hover:text-primary font-medium" href="#projects">Projects</a>
-              <a className="dark:text-white hover:text-primary font-medium" href="#contact">Contact</a>
+              <a className="dark:text-white hover:text-primary font-medium" href="#skills">Skills</a>
+              <a className="dark:text-white hover:text-primary font-medium" href="#about">About</a>
+              <a className="dark:text-white hover:text-primary font-medium" href="mailto:diego_lpz29@hotmail.com">Contact</a>
             </nav>
             
             <button className='w-6 h-6' 

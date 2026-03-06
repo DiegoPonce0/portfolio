@@ -1,4 +1,4 @@
-import type { ExperienceProps } from '../types/experience';
+import type { ExperienceProps } from '../../types/experience';
 
 export function Experience({ title, company, date, description }: ExperienceProps) {
     return (

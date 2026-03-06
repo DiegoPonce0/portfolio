@@ -1,4 +1,4 @@
-import type { SkillsProps } from '../types/skills';
+import type { SkillsProps } from '../../types/skills';
 
 
 export function Skills({ title, icons }: SkillsProps) {

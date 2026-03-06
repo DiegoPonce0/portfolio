@@ -1,4 +1,4 @@
-import type { ProjectsProps } from '../types/projects';
+import type { ProjectsProps } from '../../types/projects';
 
 const techColors: Record<string, string> = {
   React: 'bg-blue-500/10 text-blue-600',
@@ -6,10 +6,9 @@ const techColors: Record<string, string> = {
   TypeScript: 'bg-blue-600/10 text-blue-800',
   WordPress: 'bg-indigo-500/10 text-indigo-600',
   Elementor: 'bg-pink-500/10 text-pink-600',
-  'Technical SEO': 'bg-yellow-400/20 text-yellow-700',
+  'SEO': 'bg-yellow-400/20 text-yellow-700',
   Woocommerce: 'bg-purple-500/10 text-purple-600',
   'Custom Plugin Development': 'bg-gray-500/10 text-gray-600',
-  'Avada Theme': 'bg-red-500/10 text-red-600',
   ACF: 'bg-teal-500/10 text-teal-600',
   CPTs: 'bg-orange-500/10 text-orange-600'
 };

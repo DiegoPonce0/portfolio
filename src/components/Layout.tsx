@@ -1,4 +1,4 @@
-import type { LayoutProps } from "../types/layout"
+import type { LayoutProps } from "../../types/layout"
 
 import { Header } from "./Header"
 import { Footer } from "./Footer"

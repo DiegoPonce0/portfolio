@@ -11,7 +11,7 @@ export function Footer() {
         <div className="flex items-center gap-4">
 
           <a
-            href="https://www.linkedin.com/in/diego-ponce-9b1b4a1b2/"
+            href="https://www.linkedin.com/in/diego-ponce-712991217/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-primary transition"
@@ -22,7 +22,7 @@ export function Footer() {
           </a>
 
           <a
-            href="https://github.com/diego-ponce"
+            href="https://github.com/DiegoPonce0"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:text-primary transition"
@@ -30,6 +30,15 @@ export function Footer() {
             <svg className="w-6 h-6 fill-current">
               <use href="/sprite.svg#github" />
             </svg>
+          </a>
+
+          <a
+            href="mailto:diego_lpz29@hotmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-gray-300 hover:text-primary transition"
+          >
+            Contact
           </a>
 
         </div>
