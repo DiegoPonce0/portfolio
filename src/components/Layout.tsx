@@ -6,9 +6,9 @@ import { Footer } from "./Footer"
 export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <Header/>
+      <Header />
         {children}
-      <Footer/>
+      <Footer />
     </div>
   )
 }
