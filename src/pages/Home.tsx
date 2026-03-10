@@ -89,7 +89,7 @@ export const Home = () => {
             </div>
             <h1 className="py-4 text-4xl font-bold">Hey, I'm Diego Ponce</h1>
             <h2 className="text-2xl mb-6">
-              Full-stack web developer specializing in React, Astro, Node.js, Open to local, hybrid, and remote roles.
+              +5 years of experience as a <strong className="text-yellow-400">Full-Stack Web Developer</strong>, Specialized in building web applications with React, Next.js, and Node.js, Open to local, hybrid, and remote roles.
             </h2>
             <div className="flex gap-4 font-bold">
               <a
