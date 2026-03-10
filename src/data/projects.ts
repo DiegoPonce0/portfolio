@@ -15,7 +15,7 @@ export const projects: ProjectsProps[] = [
             description: 'Full-stack job marketplace with custom API, authentication, and advanced filtering.',
             technology: ['React', 'Node.js', 'Express', 'PostgreSQL'],
             result: 'Results: Full-stack job marketplace with custom API',
-            link: '#'
+            link: 'https://web-empleo.vercel.app/'
         },
         {
           img: './dental.webp',
