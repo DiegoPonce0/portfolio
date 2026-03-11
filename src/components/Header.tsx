@@ -54,7 +54,7 @@ export function Header() {
               <a className="dark:text-white hover:text-primary font-medium" href="mailto:diego_lpz29@hotmail.com">Contact</a>
             </nav>
             
-            <button className='w-6 h-6' 
+            <button className='w-6 h-6 cursor-pointer' 
               onClick={toggleTheme}>
               {isDark ? moonIcon : sunIcon}
             </button>
