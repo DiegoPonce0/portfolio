@@ -42,7 +42,7 @@ export function Projects({ img, title, description, technology, result, link }: 
                     ))}
                 </ul>
                 <p className="text-emerald-500 font-bold py-2 pb-4">{result}</p>
-                <a href={link} className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">View Project →</a>
+                <a href={link} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">View Project →</a>
             </div>
         </article>
     )
