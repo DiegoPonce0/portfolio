@@ -1,21 +1,15 @@
 import type { ProjectsProps } from "../../types/projects";
 
 export const projects: ProjectsProps[] = [
+        
         {
-          img: './dashboard.webp',
-          title: 'Marketing Dashboard',
-          description: 'React dashboard with authentication powered by Supabase (PostgreSQL backend), deployed on Vercel.',
-          technology: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
-          result: 'Results: Real-time marketing data management dashboard',
-          link: 'https://vdmarketing.vercel.app/'
-        },
-        {
-            img: './job.webp',
+            img: './devjobs.webp',
             title: 'Developer Job Board Platform',
             description: 'Full-stack job marketplace with custom API, authentication, and advanced filtering.',
             technology: ['React', 'Node.js', 'Express', 'PostgreSQL'],
             result: 'Results: Full-stack job marketplace with custom API',
-            link: 'https://web-empleo.vercel.app/'
+            link: 'https://dev-jobs-diego.vercel.app/',
+            github: 'https://github.com/DiegoPonce0/DevJobs'
         },
         {
           img: './dental.webp',

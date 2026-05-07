@@ -148,6 +148,7 @@ export const Home = () => {
                   technology={project.technology}
                   result={project.result}
                   link={project.link}
+                  github={project.github}
                 />
               ))}
             </div>

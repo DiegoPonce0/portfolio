@@ -13,7 +13,7 @@ const techColors: Record<string, string> = {
     CPTs: 'bg-orange-500/10 text-orange-600 dark:text-orange-400'
 };
 
-export function Projects({ img, title, description, technology, result, link }: ProjectsProps) {
+export function Projects({ img, title, description, technology, result, link, github }: ProjectsProps) {
     return (
         <article className="group flex flex-col md:flex-row items-center gap-8 bg-white dark:bg-gray-800 rounded-2xl shadow-sm p-6 transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl border border-gray-100 dark:border-gray-700 transform-gpu">
 
@@ -42,7 +42,12 @@ export function Projects({ img, title, description, technology, result, link }: 
                     ))}
                 </ul>
                 <p className="text-emerald-500 font-bold py-2 pb-4">{result}</p>
-                <a href={link} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">View Project →</a>
+                <div className="flex flex-col md:flex-row gap-4">
+                    <a href={link} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">View Project →</a>
+                    {github && (
+                        <a href={github} target="_blank" className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-md">View Code →</a>
+                    )}
+                </div>
             </div>
         </article>
     )

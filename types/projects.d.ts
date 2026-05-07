@@ -5,4 +5,5 @@ export type ProjectsProps = {
   technology: string[];
   result: string;
   link: string;
+  github?: string;
 };
