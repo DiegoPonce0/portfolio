@@ -45,7 +45,7 @@ export function Projects({ img, title, description, technology, result, link, gi
                 <div className="flex flex-col md:flex-row gap-4">
                     <a href={link} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">View Project →</a>
                     {github && (
-                        <a href={github} target="_blank" className="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded-md">View Code →</a>
+                        <a href={github} target="_blank" className="bg-gray-800 hover:bg-gray-900 dark:bg-gray-600 dark:hover:bg-gray-700 text-white px-4 py-2 rounded-md">View Code →</a>
                     )}
                 </div>
             </div>
