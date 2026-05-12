@@ -176,9 +176,7 @@ export const Home = () => {
               <h2 className='flex items-center gap-2 text-3xl font-bold py-2 px-2 mb-10'>{userIcon} 
                 <span>About Me</span>
                 </h2>
-              <p className='md:text-justify'>I’m a Full-Stack Web Developer focused on building high-performance, scalable web applications. I work across modern JavaScript stacks (React, Node.js) and WordPress ecosystems, combining clean architecture with SEO and performance optimization.
-
-                I’ve developed e-commerce platforms, job marketplaces, and custom dashboards, consistently improving load times, search visibility, and conversion rates. I’m passionate about creating solutions that are both technically solid and business-driven.</p>
+              <p className='md:text-justify'>I’m a Full Stack Developer focused on building scalable web applications and high-performance digital experiences. I work with modern JavaScript technologies like React, Node.js, and TypeScript, combining frontend and backend development with performance optimization and clean architecture. I’ve built e-commerce platforms, job marketplaces, and custom web applications focused on usability, responsiveness, and real business impact. I enjoy creating products that are both technically solid and user-focused.</p>
             </div>
           </div>
         </section>
